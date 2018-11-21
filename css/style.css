@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'myFont1';
+  src: url(fonts/LegendM54.ttf);
+}
+
+input[type=button]{
+    font-family: myFont1;
+}
+
+body {
+  background-image: url('back.png');
+  font-family: myFont1;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+main {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+header {
+  background-repeat: no-repeat;
+  background-image: url('images/big.jpg');
+  background-position: center;
+}
+
+.block2 {
+  grid-column: span 2;
+}
+
+section {
+  border-style: solid;
+  height: 15em;
+  margin: 1%;
+  background-color: #006600;
+}
+
+img {
+  margin: 7px;
+}
